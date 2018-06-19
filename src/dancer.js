@@ -5,9 +5,8 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   this._timeBetweenSteps = timeBetweenSteps;
   this.$node = $('<span class="dancer"></span>');
   this.step();
-
-
   this.setPosition(this._top, this._left);
+  this.imageNames = ['rocketship.png', 'rocketship1.png'];
 };
   
 
@@ -17,10 +16,16 @@ makeDancer.prototype.step = function() {
 };
 
 makeDancer.prototype.setPosition = function(top, left) {
-
+  
   var styleSettings = {
     top: top,
     left: left
   };
   this.$node.css(styleSettings);
+
+  // this.$node.css({'content: url("' +this.imageNames[0] + '")'});
+};
+
+makeDancer.prototype.randomImage = function() {
+  this.$node.css({'content': 'url(' + this.imageNames[Math.floor(Math.random() * this.imageNames.length)] + ')'});
 };

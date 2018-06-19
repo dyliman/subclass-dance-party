@@ -6,6 +6,7 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   this.setPosition((1000 * Math.random()), 0);
   var that = this;
   setTimeout(function() { that.$node.remove(); }, 4000);
+  makeDancer.prototype.randomImage.call(this);
 //return this
 };
 

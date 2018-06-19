@@ -1,7 +1,7 @@
 var otherDancer = function(top, left, timeBetweenSteps) {
 // this = Object.create(otherDancer.prototype)  
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="blueDancer"></span>');
+  this.$node = $('<a href="#" class="blueDancer" data-dancer-maker-function-name="transform"></a>');
   this.setPosition(top, left);
 //return this
 };

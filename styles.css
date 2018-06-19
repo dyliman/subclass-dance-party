@@ -12,7 +12,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addLineUpButton, .addRocketDancerButton{
   padding:5px 12px;
   float:right;
 }
@@ -26,18 +26,18 @@ body, a:link, a:visited, a:active{
 .dancer{
   /*border:10px solid red;
   border-radius:10px;*/
-  content: url('rocketship.gif');
-  width: 100px;
-  height: 100px;
-  position: relative;
+  /*content: url('rocketship.gif');*/
+  width: 200px;
+  height: 200px;
+  position: absolute;
   -webkit-animation-name: rocketFly;
-  -webkit-animation-duration: 4s;
+  -webkit-animation-duration: 6s;
   animation-name: rocketFly;
-  animation-duration: 4s;
+  animation-duration: 6s;
 }
 
 @-webkit-keyframes rocketFly {
-  0%  {left: 0px; bottom: 90%;}
+  /*0%  {left: 0px; bottom: 90%;}*/
   100% {left: 90%; top: 0px;}
 }
 
@@ -48,4 +48,14 @@ body, a:link, a:visited, a:active{
   content: url("saucer1.gif");
   width: 100px;
   height: 100px;
+}
+
+.blueDancer:hover {
+  -webkit-animation-name: grow;
+  -webkit-animation-duration: 0.8s;
+}
+
+@-webkit-keyframes grow {
+  50% {width: 200px; height: 200px;}
+  100% {width: 100px; height: 100px;}
 }
