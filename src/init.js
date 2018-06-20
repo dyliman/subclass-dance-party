@@ -1,6 +1,7 @@
 $(document).ready(function() {
   window.dancers = [];
-
+  window.heads = ['heads/1.png', 'heads/2.png', 'heads/3.png', 'heads/4.png', 'heads/5.png', 'heads/6.png', 'heads/7.png', 'heads/8.png', 'heads/9.png', 'heads/10.png', 'heads/11.png', 'heads/12.png', 'heads/13.png', 'heads/14.png', 'heads/15.png', 'heads/16.png', 'heads/17.png', 'heads/18.png', 'heads/19.png', 'heads/20.png', 'heads/21.png', 'heads/22.png', 'heads/23.png', 'heads/24.png', 'heads/25.png', 'heads/26.png', 'heads/27.png', 'heads/28.png', 'heads/29.png', 'heads/30.png', 'heads/31.png', 'heads/32.png', 'heads/33.png', 'heads/34.png', 'heads/35.png', 'heads/36.png', 'heads/37.png', 'heads/38.png', 'heads/39.png', 'heads/40.png'];
+  
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
