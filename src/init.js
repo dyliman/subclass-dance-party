@@ -107,3 +107,16 @@ $('.addRocketDancerButton').on('click', function(event) {
 
 // });
 
+$('.fightButton').on('click', function(event) {
+     
+  var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+
+  // get the maker function for the kind of dancer we're supposed to make
+  var dancerMakerFunction = window[dancerMakerFunctionName];
+
+  // make a dancer with a random position
+  var rollSound = new Audio('src/fight.mp3');
+  rollSound.play();
+  dancerMakerFunction();
+
+});
